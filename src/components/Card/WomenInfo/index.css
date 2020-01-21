@@ -8,12 +8,14 @@
   font-weight: 300;
   margin-bottom: 0;
   font-size: 15px;
+  padding-left: 10px;
 }
 .H2 {
   text-transform: uppercase;
   font-weight: 900;
   margin: 0;
   font-size: 32px;
+  padding-left: 10px;
 }
 .articulo {
   padding: 10px;
