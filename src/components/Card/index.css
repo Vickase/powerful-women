@@ -1,32 +1,53 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,900&display=swap");
 
-body{
-    font-family: 'Rubik', sans-serif;
-    color: #001a33;
-    box-sizing: border-box;
+body {
+  font-family: "Rubik", sans-serif;
+  color: #001a33;
+  box-sizing: border-box;
 }
 
-.card-wrapper{
-    height:600px;
-    width: 360px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 15px;
-
-    
+.card-wrapper {
+  height: 600px;
+  width: 360px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
-.info-section{
-    background-color: rgb(242, 245, 248);
-    position: absolute;
-    z-index: 1;
-    height: auto;
-    width:300px;
-    padding:0 15px;
-    bottom:107px;
+.info-section {
+  background-color: rgb(242, 245, 248);
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  padding: 0 15px;
+  bottom: 58px;
+  height: 175px;
+  overflow: hidden;
+  transition: all 0.75s ease;
+  
 }
-
+.info-section:after {
+  margin-left: 0;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(
+    to top,
+    rgba(242, 245, 248, 1) 20%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  pointer-events: none;
+}
+.info-section:hover {
+  height: 601px;
+  width: 330px;
+  margin-left: 0;
+  border-radius: 10px;
+  
+}
