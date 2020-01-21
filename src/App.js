@@ -1,11 +1,23 @@
-import React from 'react';
-import './App.css';
-import Cards from "./components/Cards/Cards";
+import React from "react";
+import "./App.css";
+import Card from "./components/Card";
+import imageSrcWonder from "./images/Wonder_Woman-large.jpg";
+
+const wonderWoman = {
+  img: imageSrcWonder,
+  title: "asdasd",
+  subtitle: "qqqqq",
+  info: "LA INFOOOOOOO"
+};
 
 function App() {
   return (
-    <Cards></Cards>
-    
+    <Card
+      imageSrc={imageSrcWonder}
+      title={wonderWoman.title}
+      subtitle={wonderWoman.subtitle}
+      info={wonderWoman.info}
+    />
   );
 }
 
