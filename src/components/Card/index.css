@@ -43,7 +43,7 @@ body {
   );
   pointer-events: none;
 }
-.info-section:hover {
+.info-section.agrandar {
   height: 601px;
   width: 330px;
   margin-left: 0;
@@ -66,7 +66,8 @@ body {
   bottom: 0;
   z-index: 2;
   fill: #04b7ac;
+  transition: all 0.3s linear;
 }
-.plus :hover {
-  transform: rotate(20deg);
+.info-section.agrandar .plus {
+  transform: rotate(180deg);
 }
