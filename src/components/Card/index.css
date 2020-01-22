@@ -9,7 +9,6 @@ body {
 .card-wrapper {
   height: 600px;
   width: 360px;
-  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +35,7 @@ body {
   
 }
 .info-section:after {
-  margin-left: 0;
+  
   position: absolute;
   bottom: 0;
   height: 50%;
@@ -74,13 +73,12 @@ body {
   z-index: 2;
   fill: #04b7ac;
   transition: all 0.3s linear;
+  cursor: pointer;
   
 }
-.plus:hover{
-  cursor: pointer;
-}
+
 .info-section.agrandar .plus {
   transform: rotate(180deg);
   fill:#044fb8;
-  cursor: pointer;
+  
 }
