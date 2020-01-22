@@ -15,18 +15,25 @@ body {
   justify-content: center;
   border-radius: 10px;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
 }
 
 .info-section {
+  box-sizing: border-box;
   background-color: rgb(242, 245, 248);
   position: absolute;
   z-index: 1;
-  width: 300px;
+  width: 330px;
   padding: 0 15px;
-  bottom: 58px;
+  bottom: 0px;
+  left:calc(50% - 165px);
   height: 175px;
   overflow: hidden;
   transition: all 0.75s ease;
+  
 }
 .info-section:after {
   margin-left: 0;
@@ -44,9 +51,10 @@ body {
 }
 .info-section.agrandar {
   height: 601px;
-  width: 330px;
+  width: 360px;
   margin-left: 0;
   border-radius: 10px;
+  left: 0;
 }
 .plus-container {
   position: absolute;
@@ -66,7 +74,13 @@ body {
   z-index: 2;
   fill: #04b7ac;
   transition: all 0.3s linear;
+  
+}
+.plus:hover{
+  cursor: pointer;
 }
 .info-section.agrandar .plus {
   transform: rotate(180deg);
+  fill:#044fb8;
+  cursor: pointer;
 }

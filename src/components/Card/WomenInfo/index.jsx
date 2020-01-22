@@ -11,6 +11,7 @@ const PowerfulWomenInfo = props => {
       </header>
       <article className="articulo">
         <p className="card-content">{props.info}</p>
+        <a ><p className="link">LINK</p></a>
       </article>
     </div>
   );
